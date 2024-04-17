@@ -1,46 +1,21 @@
-# Get Started
+---
+lang: en-US
+title: Get Started
+description: Working with Pepperi Brand
+---
 
-This is a normal page, which contains VuePress basics.
+# Pepperi Brand
 
-## Pages
+<!-- ![Logo](./Pepperi-Logo.svg) -->
 
-You can add markdown files in your vuepress directory, every markdown file will be converted to a page in your site.
+A brand is more than just its appearance; it encompasses the quality of the product and service, its personality, the way it talks, it way it looks, its values, the different applications, its implementation, the way it conducts its business and how it all works together in a consist manner. 
 
-See [routing][] for more details.
+Pepperi brand book explores the different pilers that makes a brand and a acts as central source for the brand core entities – be it principles, ideas, guides, documents, asset, projects, elements, systems – and how they should be used to represent the brand
 
-## Content
+## in this guild you'll find the following chapters
 
-Every markdown file [will be rendered to HTML, then converted to a Vue SFC][content].
-
-VuePress support basic markdown syntax and [some extensions][synatex-extensions], you can also [use Vue features][vue-feature] in it.
-
-## Configuration
-
-VuePress use a `.vuepress/config.js`(or .ts) file as [site configuration][config], you can use it to config your site.
-
-For [client side configuration][client-config], you can create `.vuepress/client.js`(or .ts).
-
-Meanwhile, you can also add configuration per page with [frontmatter][].
-
-## Layouts and customization
-
-Here are common configuration controlling layout of `@vuepress/theme-default`:
-
-- [navbar][]
-- [sidebar][]
-
-Check [default theme docs][default-theme] for full reference.
-
-You can [add extra style][style] with `.vuepress/styles/index.scss` file.
-
-- [routing](https://vuejs.press/guide/page.html#routing)
-- [content](https://vuejs.press/guide/page.html#content)
-- [synatex-extensions](https://vuejs.press/guide/markdown.html#syntax-extensions)
-- [vue-feature](https://vuejs.press/guide/markdown.html#using-vue-in-markdown)
-- [config](https://vuejs.press/guide/configuration.html#client-config-file)
-- [client-config](https://vuejs.press/guide/configuration.html#client-config-file)
-- [frontmatter](https://vuejs.press/guide/page.html#frontmatter)
-- [navbar](https://vuejs.press/reference/default-theme/config.html#navbar)
-- [sidebar](https://vuejs.press/reference/default-theme/config.html#sidebar)
-- [default-theme](https://vuejs.press/reference/default-theme/)
-- [style](https://vuejs.press/reference/default-theme/styles.html#style-file)
+1. The Brand Foundation chapter sets the foundation for the brand's identity. It defines the brand's mission, vision, values, and personality. This chapter serves as the guiding principle that influences all brand decisions and communications.
+2. The [Visual Identity chapter](../visual-identity/index.html) outlines the rules and guidelines for the use of the brand's logo, colors, typography, and imagery. It ensures consistency and recognition across all visual mediums.
+3. The Verbal Identity chapter outlines the brand's voice and tone. It provides guidelines on the language, style, and tone to be used in all forms of communication to ensure consistency, reflect the brand's personality, and resonate with the target audience.
+4. The Applications chapter demonstrates how to apply the brand's visual and verbal identity across different mediums. It covers everything from print and digital applications to environmental graphics and merchandising, ensuring a consistent and cohesive brand experience in all touchpoints.
+5. The Brand Management chapter provides guidance on how to manage and maintain the brand's identity over time. It covers aspects such as brand strategy, positioning, and evolution. It also includes procedures for brand auditing and monitoring to ensure adherence to the brand guidelines and to assess the brand's performance and perception in the market.
