@@ -1,7 +1,7 @@
 ---
 home: true
 title: Home
-heroImage: https://vuejs.press/images/hero.png
+heroImage: https://yonatankof.com/misc/pepp/Addon%20Hackathon%20-%20Badge.png
 actions:
   - text: Get Started
     link: /getting-started.html
