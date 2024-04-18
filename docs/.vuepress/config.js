@@ -1,13 +1,18 @@
 import { defaultTheme } from '@vuepress/theme-default';
 import { defineUserConfig } from 'vuepress/cli';
 import { viteBundler } from '@vuepress/bundler-vite';
+import { registerComponentsPlugin } from '@vuepress/plugin-register-components';
+
+import { getDirname, path } from 'vuepress/utils'
+
+const __dirname = getDirname(import.meta.url)
 
 export default defineUserConfig({
 	lang: 'en-US',
 
 	title: 'Pepperi Brand',
 	description: "A place to find Pepperi's brand guidelines, download brand assets, and review user persona",
-  head: [['link', { rel: 'icon', href: '/images/pepperi-favicon.ico' }]],
+	head: [['link', { rel: 'icon', href: '/images/pepperi-favicon.ico' }]],
 
 	theme: defaultTheme({
 		logo: '/images/Pepperi-Icon.svg',
@@ -29,4 +34,10 @@ export default defineUserConfig({
 	}),
 
 	bundler: viteBundler(),
+	plugins: [
+		registerComponentsPlugin({
+			// options
+			componentsDir: path.resolve(__dirname, './components'),
+		}),
+	],
 });
