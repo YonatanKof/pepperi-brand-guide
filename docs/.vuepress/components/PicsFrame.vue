@@ -24,6 +24,14 @@ defineProps({
 		type: String,
 		default: 'var(--1-Bright)',
 	},
+	goodToUseStart: {
+		type: Boolean,
+		default: true,
+	},
+	goodToUseEnd: {
+		type: Boolean,
+		default: true,
+	},
 });
 </script>
 <template>
@@ -31,6 +39,7 @@ defineProps({
 		<div class="frame" :style="`background-color:` + bgStart + `;`">
 			<div class="title-box">
 				<p>{{ titleStart }}</p>
+				<DoDont :is-good="goodToUseStart" />
 			</div>
 			<div class="image-box">
 				<img class="this-image" :src="imageStart" alt="Pepperi logo, Full – Icon & Typeface" />
@@ -39,6 +48,7 @@ defineProps({
 		<div class="frame" :style="`background-color:` + bgEnd + `;`">
 			<div class="title-box">
 				<p>{{ titleEnd }}</p>
+				<DoDont :is-good="goodToUseEnd" />
 			</div>
 			<div class="image-box"><img class="this-image" :src="imageEnd" alt="Pepperi logo, Full – Icon & Typeface" /></div>
 		</div>
@@ -49,6 +59,9 @@ defineProps({
 .title-box {
 	background-color: var(--color-sys-dis);
 	padding: var(--space-xs) var(--space-s);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 	p {
 		margin: unset;
 		font-size: var(--step--1);
