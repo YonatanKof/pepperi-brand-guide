@@ -1,0 +1,10 @@
+a.sidebar-item {
+	font-size: var(--step-0);
+}
+.sidebar-item:not(.sidebar-heading) {
+	font-size: var(--step-0);
+}
+
+.sidebar-item-children .sidebar-item-children .sidebar-item:not(.sidebar-heading) {
+	font-size: var(--step--1);
+}

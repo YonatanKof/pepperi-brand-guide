@@ -24,7 +24,7 @@
 --border-radius-sm: var(--space-3xs);
 --border-radius-md: var(--space-2xs);
 
---content-width:800px;
+// --content-width:800px;
 
 --color-sys-main: var(--7-Darkest);
 --color-sys-slight: hsla(0, 0%, 10%, 0.75);
@@ -56,9 +56,9 @@
 	0 0.4rem 0.4rem var(--color-sys-dis),
 	0 0.8rem 0.8rem var(--color-sys-dis);
 --shadow-lg: 
-	0 0.3rem 0.3rem var(--color-sys-dis), 
-	0 0.6rem 0.6rem var(--color-sys-dis),
-	0 1.2rem 1.2rem var(--color-sys-dis);
+	0 0.4rem 0.4rem var(--color-sys-dis), 
+	0 0.8rem 0.8rem var(--color-sys-dis),
+	0 1.6rem 1.6rem var(--color-sys-dis);
 --font-wight--bolder: bolder;
 --font-size-2xl: 2em;
 }
@@ -127,6 +127,9 @@ hr {
 
 	--color-focus-main: hsl(200, 100%, 40%);
 	--color-focus-slight: hsl(200, 100%, 60%);
+
+	--Caution: #ff3e17;
+	--Success: #48d800;
 }
 
 .logo {
