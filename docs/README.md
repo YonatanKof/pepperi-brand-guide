@@ -1,8 +1,7 @@
 ---
 home: true
 title: Home
-# heroImage: https://yonatankof.com/misc/pepp/Addon%20Hackathon%20-%20Badge.png
-heroImage: /images/Pepperi-Logo.svg
+heroImage: /logo/Pepperi-Logo.svg
 actions:
   - text: Get Started
     link: /get-started.html
@@ -24,8 +23,6 @@ footer: Copyright © 2024 Pepperi
 ---
 
 # Pepperi Brand
-
-<!-- ![Logo](./Pepperi-Logo.svg) -->
 
 A brand is more than just its appearance; it encompasses the quality of the product and service, its personality, the way it talks, it way it looks, its values, the different applications, its implementation, the way it conducts its business and how it all works together in a consist manner. 
 

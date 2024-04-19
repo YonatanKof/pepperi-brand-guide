@@ -11,11 +11,11 @@ export default defineUserConfig({
 	lang: 'en-US',
 	title: 'Pepperi Brand',
 	description: "A place to find Pepperi's brand guidelines, download brand assets, and review user persona",
-	head: [['link', { rel: 'icon', href: '/images/pepperi-favicon.ico' }]],
+	head: [['link', { rel: 'icon', href: '/images/favicon.png' }]],
 
 	theme: defaultTheme({
 		colorModeSwitch: false,
-		logo: '/images/Pepperi-Icon.svg',
+		logo: '/logo/Pepperi-Icon.svg',
 
 		navbar: [
 			'/',
