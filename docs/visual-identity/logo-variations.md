@@ -121,7 +121,7 @@ We can use the logo in many different ways, but there ways we can not, here are 
     <PicsFrame 
         title-start="Don't place logo over an image" 
         title-end="Don't place logo over a gradient" 
-        bg-start="url(/images/Depositphotos_146416039_XL.webp) center / cover"
+        bg-start="url(/images/Depositphotos_146416039_XL.jpg) center / cover"
         bg-end="linear-gradient(217deg, var(--Tertiary-Brand), rgba(255, 0, 0, 0) 70.71%),
                 linear-gradient(127deg, var(--Secondary-Brand), rgba(0, 255, 0, 0) 70.71%),
                 linear-gradient(336deg, var(--1-Bright), rgba(0, 0, 255, 0) 70.71%)"

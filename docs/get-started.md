@@ -6,8 +6,6 @@ description: Working with Pepperi Brand
 
 # Pepperi Brand
 
-<!-- ![Logo](./Pepperi-Logo.svg) -->
-
 A brand is more than just its appearance; it encompasses the quality of the product and service, its personality, the way it talks, it way it looks, its values, the different applications, its implementation, the way it conducts its business and how it all works together in a consist manner. 
 
 Pepperi brand book explores the different pilers that makes a brand and a acts as central source for the brand core entities – be it principles, ideas, guides, documents, asset, projects, elements, systems – and how they should be used to represent the brand
