@@ -8,8 +8,8 @@ defineProps({
 </script>
 <template>
 	<div>
-		<code v-if="isGood" style="color: var(--Success)">Is OK</code>
-		<code v-else style="color: var(--Caution)">Not OK</code>
+		<code v-if="isGood" style="background-color: darkgreen">OK</code>
+		<code v-else style="background-color: darkred">Not OK</code>
 	</div>
 </template>
 <style scoped>
@@ -19,5 +19,9 @@ p {
 code{
 	font-weight: bold;
 	font-size: var(--step--1);
+	color: white;
+	box-shadow: var(--shadow-sm);
+	padding: var(--space-3xs) var(--space-2xs);
+	white-space: nowrap;
 }
 </style>

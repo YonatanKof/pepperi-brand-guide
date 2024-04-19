@@ -8,6 +8,14 @@ defineProps({
 		type: String,
 		default: '/logo/Pepperi-Logo.svg',
 	},
+	imageWidthStart: {
+		type: String,
+		default: undefined,
+	},
+	imageWidthEnd: {
+		type: String,
+		default: undefined,
+	},
 	titleStart: {
 		type: String,
 		default: 'Title Start',
@@ -32,25 +40,61 @@ defineProps({
 		type: Boolean,
 		default: true,
 	},
+	isDarkStart: {
+		type: Boolean,
+		default: false,
+	},
+	isDarkEnd: {
+		type: Boolean,
+		default: false,
+	},
+	filterStart: {
+		type: String,
+		default: undefined,
+	},
+	filterEnd: {
+		type: String,
+		default: undefined,
+	},
+	backgroundStart: {
+		type: String,
+		default: undefined,
+	},
+	backgroundEnd: {
+		type: String,
+		default: undefined,
+	},
 });
 </script>
 <template>
 	<div class="pic-row">
-		<div class="frame" :style="`background-color:` + bgStart + `;`">
-			<div class="title-box">
+		<div class="frame" :style="{ background: bgStart }">
+			<div :class="{ dark: isDarkStart }" class="title-box">
 				<p>{{ titleStart }}</p>
 				<DoDont :is-good="goodToUseStart" />
 			</div>
 			<div class="image-box">
-				<img class="this-image" :src="imageStart" alt="Pepperi logo, Full – Icon & Typeface" />
+				<img
+					class="this-image"
+					:style="{ maxWidth: imageWidthStart, filter: filterStart }"
+					:src="imageStart"
+					:alt="titleStart"
+				/>
 			</div>
 		</div>
-		<div class="frame" :style="`background-color:` + bgEnd + `;`">
-			<div class="title-box">
+		<div class="frame" :style="{ background: bgEnd }">
+			<div :class="{ dark: isDarkEnd }" class="title-box">
 				<p>{{ titleEnd }}</p>
 				<DoDont :is-good="goodToUseEnd" />
 			</div>
-			<div class="image-box"><img class="this-image" :src="imageEnd" alt="Pepperi logo, Full – Icon & Typeface" /></div>
+			<div class="image-box">
+				<img
+					class="this-image"
+					:style="{ maxWidth: imageWidthEnd, filter: filterEnd }"
+					:src="imageEnd"
+					:alt="titleEnd"
+				/>
+			</div>
 		</div>
 	</div>
 </template>
@@ -58,13 +102,14 @@ defineProps({
 <style lang="scss" scoped>
 .title-box {
 	background-color: var(--color-sys-dis);
-	padding: var(--space-xs) var(--space-s);
+	padding: var(--space-xs);
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	p {
 		margin: unset;
 		font-size: var(--step--1);
+		color: var(--color-sys-main);
 	}
 }
 .image-box {
@@ -81,10 +126,7 @@ defineProps({
 .frame {
 	display: grid;
 	grid-template-rows: auto 1fr;
-	// text-align: center;
 	width: 100%;
-	// aspect-ratio: 16/9;
-	// padding: var(--space-m);
-	// gap: var(--space-xs);
+	aspect-ratio: 1/0.9;
 }
 </style>
