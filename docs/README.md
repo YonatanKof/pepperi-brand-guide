@@ -13,22 +13,22 @@ actions:
 
 features:
   - title: Brand Guidelines
-    details: Explore the core entities that makes Pepperi brand – principles, language, ideas, guides, documents, asset, projects, elements – and how they should be used to represent the brand
-  - title: Download Brand Assets
-    details: Download Pepperi brand assets – fonts, icons, logo for internal or partner use, decks and illustrations
-  - title: Review User Persona
+    details: Explore the core entities that makes Pepperi brand; principles, language, ideas, guides, documents, asset, projects, elements – and how they should be used to represent the brand
+  - title: Brand Assets
+    details: Download Pepperi brand assets; fonts, icons, logo for internal or partner use, decks and illustrations
+  - title: Persona & Target Audience
     details: Pepperi Personas represent a real Pepperi user and are used to identify unmet user needs, which consist of goals and pain points
 
 footer: Copyright © 2024 Pepperi
 ---
 
-# Pepperi Brand
+# Pepperi Brand & Branding 
 
-A brand is more than just its appearance; it encompasses the quality of the product and service, its personality, the way it talks, it way it looks, its values, the different applications, its implementation, the way it conducts its business and how it all works together in a consist manner. 
+A brand is greater than the sum of its parts; it encompasses the quality of the product and service, its personality, the way it talks, it way it looks, its values, the different applications, its implementation, the way it conducts its business and how it all works together in a consist manner. 
 
 Pepperi brand book explores the different pilers that makes a brand and a acts as central source for the brand core entities – be it principles, ideas, guides, documents, asset, projects, elements, systems – and how they should be used to represent the brand
 
-## in this guild you'll find the following chapters
+## In this guild you'll find the following chapters
 
 1. The Brand Foundation chapter sets the foundation for the brand's identity. It defines the brand's mission, vision, values, and personality. This chapter serves as the guiding principle that influences all brand decisions and communications.
 2. The [Visual Identity chapter](../visual-identity/index.html) outlines the rules and guidelines for the use of the brand's logo, colors, typography, and imagery. It ensures consistency and recognition across all visual mediums.
