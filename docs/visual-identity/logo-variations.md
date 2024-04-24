@@ -1,4 +1,4 @@
-# Logo & Variations
+# Logo Usage  
 
 Showcase your primary logo, variations for different applications, and clear usage guidelines
 
