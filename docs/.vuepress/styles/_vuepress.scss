@@ -8,3 +8,58 @@ a.sidebar-item {
 .sidebar-item-children .sidebar-item-children .sidebar-item:not(.sidebar-heading) {
 	font-size: var(--step--1);
 }
+
+h1 .header-anchor:hover::before,
+h2 .header-anchor:hover::before,
+h3 .header-anchor:hover::before,
+h4 .header-anchor:hover::before,
+h5 .header-anchor:hover::before,
+h6 .header-anchor:hover::before {
+	font-family: var(--font-hand);
+	content: '#';
+	position: absolute;
+	left: -1em;
+	color: var(--c-brand);
+	bottom: 0.3em;
+}
+
+.home .hero img {
+	height: auto;
+	max-width: 32rem;
+}
+.home .hero .description {
+	color: var(--color-sys-slight);
+}
+.home .feature h2 {
+	color: var(--color-sys-main);
+}
+.home .feature p {
+	color: var(--color-sys-slight);
+}
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+}
+ol {
+	margin-inline-start: var(--space-l);
+	margin-inline-start: 2em;
+}
+ul {
+	margin-inline-start: var(--space-s);
+	margin-inline-start: 1.5em;
+}
+li {
+	padding-inline-start: var(--space-3xs);
+}
+li::marker {
+	color: var(--Secondary-Contrast);
+	margin-right: 1ch;
+}
+ol li::marker {
+	font-family: var(--font-hand);
+	font-size-adjust: 0.6;
+}
+.sidebar-item-children .sidebar-item-children .sidebar-item:not(.sidebar-heading).active {
+	font-weight: bold;
+}
