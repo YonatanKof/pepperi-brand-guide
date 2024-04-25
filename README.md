@@ -1,4 +1,4 @@
-# Pepperi Brand
+# Pepperi Brand Guide
 
 A place to find Pepperi's brand guidelines, download brand assets, and review user persona
 

@@ -4,7 +4,7 @@ title: Get Started
 description: Working with Pepperi Brand
 ---
 
-# Pepperi Brand
+# Pepperi Brand Guide
 
 A brand is more than just its appearance; it encompasses the quality of the product and service, its personality, the way it talks, it way it looks, its values, the different applications, its implementation, the way it conducts its business and how it all works together in a consist manner. 
 

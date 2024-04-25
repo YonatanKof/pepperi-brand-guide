@@ -1,3 +1,7 @@
+$MQNarrow: 959px !default;
+$MQMobile: 719px !default;
+$MQMobileNarrow: 419px !default;
+
 // Vars
 :root {
 
@@ -47,6 +51,24 @@
 --space-md: 1rem;
 --bg-pre: none;
 
+// Overrides
+// brand colors
+--c-brand: var(--Primary-Contrast);
+--c-brand-light: var(--Primary-Brand);
+
+// text colors
+--c-text: var(--color-sys-main);
+--c-text-accent: var(--c-brand);
+--c-text-light: var(--color-sys-slight);
+--c-text-lighter: var(--color-sys-dim);
+--c-text-lightest: var(--color-sys-dis);
+--c-text-quote: var(--color-sys-main);
+
+// border colors
+--c-border: var(--color-sys-dim);
+--c-border-dark: var(--color-sys-dim);
+
+
 --shadow-sm: 
 	0 0.1rem 0.1rem var(--color-sys-dis), 
 	0 0.2rem 0.2rem var(--color-sys-dis),
@@ -95,14 +117,6 @@ img {
 .icon-btn {
 	padding: var(--space-2xs);
 }
-img ~ em {
-	color: var(--color-sys-slight);
-	font-size: var(--step--1);
-	padding-inline-start: var(--space-2xs);
-	border-inline-start: var(--color-sys-dim) solid var(--space-4xs);
-	display: inline-block;
-	margin-block-start: var(--space-2xs);
-}
 hr {
 	border: none;
 	border-bottom: solid 1px var(--color-sys-dim);
@@ -114,10 +128,10 @@ hr {
 	object-fit: cover;
 }
 .dark {
-	--color-sys-main: hsl(34, 78%, 91%);
-	--color-sys-slight: hsla(34, 78%, 91%, 0.75);
-	--color-sys-dim: hsla(34, 78%, 91%, 0.25);
-	--color-sys-dis: hsla(34, 78%, 91%, 0.1);
+	--color-sys-main: hsl(0, 0%, 100%);
+	--color-sys-slight: hsla(0, 0%, 100%, 0.75);
+	--color-sys-dim: hsla(0, 0%, 100%, 0.25);
+	--color-sys-dis: hsla(0, 0%, 100%, 0.1);
 
 	--color-sys-invert: hsl(34, 8%, 16%);
 	--color-sys-invert-highlight: hsl(34, 8%, 10%);
