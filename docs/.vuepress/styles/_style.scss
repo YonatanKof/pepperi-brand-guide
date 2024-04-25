@@ -1,3 +1,7 @@
+$MQNarrow: 959px !default;
+$MQMobile: 719px !default;
+$MQMobileNarrow: 419px !default;
+
 // Vars
 :root {
 
@@ -60,6 +64,10 @@
 --c-text-lightest: var(--color-sys-dis);
 --c-text-quote: var(--color-sys-main);
 
+// border colors
+--c-border: var(--color-sys-dim);
+--c-border-dark: var(--color-sys-dim);
+
 
 --shadow-sm: 
 	0 0.1rem 0.1rem var(--color-sys-dis), 
@@ -120,10 +128,10 @@ hr {
 	object-fit: cover;
 }
 .dark {
-	--color-sys-main: hsl(34, 78%, 91%);
-	--color-sys-slight: hsla(34, 78%, 91%, 0.75);
-	--color-sys-dim: hsla(34, 78%, 91%, 0.25);
-	--color-sys-dis: hsla(34, 78%, 91%, 0.1);
+	--color-sys-main: hsl(0, 0%, 100%);
+	--color-sys-slight: hsla(0, 0%, 100%, 0.75);
+	--color-sys-dim: hsla(0, 0%, 100%, 0.25);
+	--color-sys-dis: hsla(0, 0%, 100%, 0.1);
 
 	--color-sys-invert: hsl(34, 8%, 16%);
 	--color-sys-invert-highlight: hsl(34, 8%, 10%);
