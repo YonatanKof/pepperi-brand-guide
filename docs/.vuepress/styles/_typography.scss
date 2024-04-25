@@ -25,11 +25,26 @@
 	font-weight: 800;
 	src: url('/fonts/Nexa-Heavy.woff') format('woff'), url('/fonts/Nexa-Heavy.woff2') format('woff2');
 }
+@font-face {
+	font-family: 'Caveat';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/fonts/caveat-latin-400-normal.woff') format('woff'),
+		url('/fonts/caveat-latin-400-normal.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'CaveatBold';
+	font-style: normal;
+	font-weight: 700;
+	src: url('/fonts/caveat-latin-700-normal.woff') format('woff'),
+		url('/fonts/caveat-latin-400-normal.woff2') format('woff2');
+}
+
 :root {
 	--font-body: Inter, system-ui, sans-serif;
 	--font-mono: RecVar, system-ui, sans-serif;
 	--font-title: Nexa, system-ui, sans-serif;
-	--font-hand: system-ui, sans-serif;
+	--font-hand: Caveat, system-ui, sans-serif;
 }
 body,
 html {
@@ -50,7 +65,7 @@ ul,
 ol,
 li,
 blockquote {
-	// max-width: 56ch;
+	// max-width: 64ch;
 	text-wrap: pretty;
 	color: var(--color-sys-slight);
 }
@@ -70,9 +85,7 @@ h6 > a {
 	font-family: var(--font-title);
 	text-wrap: balance;
 	margin-block-end: 0.5em;
-	strong {
-		font-family: NexaBold;
-	}
+	font-weight: bold;
 }
 i,
 em {
@@ -82,25 +95,30 @@ em {
 strong {
 	font-weight: bold;
 }
-h1, h1 > a {
+h1,
+h1 > a {
 	font-size: var(--step-6);
 }
-h2, h2 > a {
+h2,
+h2 > a {
 	font-size: var(--step-5);
 }
-h3, h3 > a {
+h3,
+h3 > a {
 	font-size: var(--step-4);
 }
-h4, h4 > a {
+h4,
+h4 > a {
 	font-size: var(--step-3);
 }
-h5, h5 > a {
+h5,
+h5 > a {
 	font-size: var(--step-2);
 }
-h6, h6 > a {
+h6,
+h6 > a {
 	font-size: var(--step-1);
 }
-
 @mixin focus {
 	&:focus-visible {
 		outline: none;
