@@ -67,39 +67,46 @@ defineProps({
 });
 </script>
 <template>
-	<div class="pic-row">
-		<div class="frame" :style="{ background: bgStart }">
-			<div :class="{ dark: isDarkStart }" class="title-box">
-				<p>{{ titleStart }}</p>
-				<DoDont :is-good="goodToUseStart" />
+	<span>
+		<div class="pic-row">
+			<div class="frame" :style="{ background: bgStart }">
+				<div :class="{ dark: isDarkStart }" class="title-box">
+					<p>{{ titleStart }}</p>
+					<DoDont :is-good="goodToUseStart" />
+				</div>
+				<div class="image-box">
+					<img
+						class="this-image"
+						:style="{ maxWidth: imageWidthStart, filter: filterStart }"
+						:src="imageStart"
+						:alt="titleStart"
+					/>
+				</div>
 			</div>
-			<div class="image-box">
-				<img
-					class="this-image"
-					:style="{ maxWidth: imageWidthStart, filter: filterStart }"
-					:src="imageStart"
-					:alt="titleStart"
-				/>
+			<div class="frame" :style="{ background: bgEnd }">
+				<div :class="{ dark: isDarkEnd }" class="title-box">
+					<p>{{ titleEnd }}</p>
+					<DoDont :is-good="goodToUseEnd" />
+				</div>
+				<div class="image-box">
+					<img
+						class="this-image"
+						:style="{ maxWidth: imageWidthEnd, filter: filterEnd }"
+						:src="imageEnd"
+						:alt="titleEnd"
+					/>
+				</div>
 			</div>
 		</div>
-		<div class="frame" :style="{ background: bgEnd }">
-			<div :class="{ dark: isDarkEnd }" class="title-box">
-				<p>{{ titleEnd }}</p>
-				<DoDont :is-good="goodToUseEnd" />
-			</div>
-			<div class="image-box">
-				<img
-					class="this-image"
-					:style="{ maxWidth: imageWidthEnd, filter: filterEnd }"
-					:src="imageEnd"
-					:alt="titleEnd"
-				/>
-			</div>
-		</div>
-	</div>
+	</span>
 </template>
 
 <style lang="scss" scoped>
+span {
+	color: blue;
+	container-name: pics;
+	container-type: inline-size;
+}
 .title-box {
 	background-color: var(--color-sys-dis);
 	padding: var(--space-xs);
@@ -123,6 +130,14 @@ defineProps({
 	display: flex;
 	flex-direction: row;
 }
+
+
+@container pics (width <= 480px) {
+	.pic-row {
+		flex-direction: column;
+	}
+}
+
 .frame {
 	display: grid;
 	grid-template-rows: auto 1fr;
