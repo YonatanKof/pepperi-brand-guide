@@ -108,7 +108,10 @@ span {
 	container-type: inline-size;
 }
 .title-box {
-	background-color: var(--color-sys-dis);
+	background-color: var(--color-system-muted);
+	// background-color: color(from var(--color-system-main) xyz x y z / 0.1);
+	// background-color: rgb(from var(--color-system-main) r g b / 0.1);
+	// background-color: hsl(from var(--color-system-main) h s l / 0.1);
 	padding: var(--space-xs);
 	display: flex;
 	flex-direction: row;
@@ -116,13 +119,12 @@ span {
 	p {
 		margin: unset;
 		font-size: var(--step--1);
-		color: var(--color-sys-main);
+		color: var(--color-system-main);
 	}
 }
 .image-box {
 	padding: var(--space-xl);
 	display: flex;
-	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }

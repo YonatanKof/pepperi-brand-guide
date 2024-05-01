@@ -59,13 +59,13 @@ h6 .header-anchor:hover::before {
 	max-width: 32rem;
 }
 .home .hero .description {
-	color: var(--color-sys-slight);
+	color: var(--color-system-dimmed);
 }
 .home .feature h2 {
-	color: var(--color-sys-main);
+	color: var(--color-system-main);
 }
 .home .feature p {
-	color: var(--color-sys-slight);
+	color: var(--color-system-dimmed);
 }
 ul,
 ol {
@@ -101,7 +101,7 @@ ol li::marker {
 	padding-block-end: var(--space-s);
 	margin: unset;
 	gap: var(--space-m);
-	border-block-start: var(--space-4xs) var(--color-sys-dim) solid;
+	border-block-start: var(--space-4xs) var(--color-system-disabled) solid;
 	@media (width <= $MQNarrow) {
 		grid-template-columns: 1fr;
 	}

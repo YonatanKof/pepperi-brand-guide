@@ -5,14 +5,14 @@ $MQMobileNarrow: 419px !default;
 // Vars
 :root {
 
---Primary-Brand: #83B30C;
---Primary-Contrast: #5D8009;
---Secondary-Brand: #FE5000;
---Secondary-Contrast: #D14100;
---Tertiary-Brand: #FF9800;
---Tertiary-Contrast: #AB6600;
---Caution: #E62600;
---Success: #2A8000;
+--Primary-Brand: hsl(79, 68%, 32%);
+--Primary-Contrast: hsl(79, 68%, 23%);
+--Secondary-Brand: hsl(17, 100%, 50%);
+--Secondary-Contrast: hsl(17, 100%, 40%);
+--Tertiary-Brand: hsl(38, 100%, 50%);
+--Tertiary-Contrast: hsl(38, 100%, 30%);
+--Caution: hsl(9, 90%, 47%);
+--Success: hsl(120, 100%, 20%);
 
 --0-White: hsl(0, 0%, 100%);
 --1-Bright: hsl(0, 0%, 97%);
@@ -22,7 +22,7 @@ $MQMobileNarrow: 419px !default;
 --5-Shade: hsl(0, 0%, 35%);
 --6-Dark: hsl(0, 0%, 20%);
 --7-Darkest: hsl(0, 0%, 10%);
---8-Black: #000000;
+--8-Black: hsl(0, 0%, 0%);
 
 --header-height: var(--space-4xl);
 --border-radius-sm: var(--space-3xs);
@@ -30,15 +30,15 @@ $MQMobileNarrow: 419px !default;
 
 // --content-width:800px;
 
---color-sys-main: var(--7-Darkest);
---color-sys-slight: hsla(0, 0%, 10%, 0.75);
---color-sys-dim: hsla(0, 0%, 10%, 0.35);
---color-sys-dis: hsla(0, 0%, 10%, 0.1);
---color-sys-none: hsla(0, 0%, 10%, 0);
+--color-system-main: var(--7-Darkest);
+--color-system-dimmed: color-mix(in srgb, var(--color-system-main) 75%, transparent);;
+--color-system-disabled: color-mix(in srgb, var(--color-system-main) 35%, transparent);;
+--color-system-muted: color-mix(in srgb, var(--color-system-main) 10%, transparent);;
+--color-system-none: color-mix(in srgb, var(--color-system-main) 0%, transparent);;
 
---color-sys-invert-grad: linear-gradient(225deg, hsl(20, 50%, 95%) 0%, hsl(20, 70%, 85%) 100%);
---color-sys-invert: white;
---color-sys-invert-highlight: #F7F7F7;
+--color-system-invert-grad: linear-gradient(225deg, hsl(20, 50%, 95%) 0%, hsl(20, 70%, 85%) 100%);
+--color-system-invert: var(--0-White);
+--color-system-invert-highlight: var(--2-Lighter);
 
 --color-link-main: hsl(207, 76%, 37%);
 --color-link-slight: hsl(207, 76%, 57%);
@@ -46,7 +46,7 @@ $MQMobileNarrow: 419px !default;
 --color-focus-main: var(--color-link-main);
 --color-focus-slight: var(--color-link-slight);
 
---bg-primary: var(--color-sys-invert);
+--bg-primary: var(--color-system-invert);
 --content-space: 1rem;
 --space-md: 1rem;
 --bg-pre: none;
@@ -57,37 +57,37 @@ $MQMobileNarrow: 419px !default;
 --c-brand-light: var(--Primary-Brand);
 
 // text colors
---c-text: var(--color-sys-main);
+--c-text: var(--color-system-main);
 --c-text-accent: var(--c-brand);
---c-text-light: var(--color-sys-slight);
---c-text-lighter: var(--color-sys-dim);
---c-text-lightest: var(--color-sys-dis);
---c-text-quote: var(--color-sys-main);
+--c-text-light: var(--color-system-dimmed);
+--c-text-lighter: var(--color-system-disabled);
+--c-text-lightest: var(--color-system-muted);
+--c-text-quote: var(--color-system-main);
 
 // border colors
---c-border: var(--color-sys-dim);
---c-border-dark: var(--color-sys-dim);
+--c-border: var(--color-system-disabled);
+--c-border-dark: var(--color-system-disabled);
 
 
 --shadow-sm: 
-	0 0.1rem 0.1rem var(--color-sys-dis), 
-	0 0.2rem 0.2rem var(--color-sys-dis),
-	0 0.3rem 0.3rem var(--color-sys-dis);
+	0 0.1rem 0.1rem var(--color-system-muted), 
+	0 0.2rem 0.2rem var(--color-system-muted),
+	0 0.3rem 0.3rem var(--color-system-muted);
 --shadow-md: 
-	0 0.2rem 0.2rem var(--color-sys-dis), 
-	0 0.4rem 0.4rem var(--color-sys-dis),
-	0 0.8rem 0.8rem var(--color-sys-dis);
+	0 0.2rem 0.2rem var(--color-system-muted), 
+	0 0.4rem 0.4rem var(--color-system-muted),
+	0 0.8rem 0.8rem var(--color-system-muted);
 --shadow-lg: 
-	0 0.4rem 0.4rem var(--color-sys-dis), 
-	0 0.8rem 0.8rem var(--color-sys-dis),
-	0 1.6rem 1.6rem var(--color-sys-dis);
+	0 0.4rem 0.4rem var(--color-system-muted), 
+	0 0.8rem 0.8rem var(--color-system-muted),
+	0 1.6rem 1.6rem var(--color-system-muted);
 --font-wight--bolder: bolder;
 --font-size-2xl: 2em;
 }
 
 body {
-	background: var(--color-sys-invert);
-	color: var(--color-sys-main);
+	background: var(--color-system-invert);
+	color: var(--color-system-main);
 }
 
 img {
@@ -98,7 +98,7 @@ img {
 // button {
 // 	@include focus();
 // 	color: var(--color-link-main);
-// 	background-color: var(--color-sys-invert-highlight);
+// 	background-color: var(--color-system-invert-highlight);
 // 	box-shadow: 0 var(--space-4xs) var(--color-link-main), inset 0 0 0 1px var(--color-link-slight);
 // 	border: none;
 // 	// padding: var(--space-2xs) var(--space-xs);
@@ -119,7 +119,7 @@ img {
 }
 hr {
 	border: none;
-	border-bottom: solid 1px var(--color-sys-dim);
+	border-bottom: solid 1px var(--color-system-disabled);
 	margin-block: var(--space-m);
 }
 .this-image {
@@ -128,13 +128,10 @@ hr {
 	object-fit: cover;
 }
 .dark {
-	--color-sys-main: hsl(0, 0%, 100%);
-	--color-sys-slight: hsla(0, 0%, 100%, 0.75);
-	--color-sys-dim: hsla(0, 0%, 100%, 0.25);
-	--color-sys-dis: hsla(0, 0%, 100%, 0.1);
+	--color-system-main: var(--0-White);
 
-	--color-sys-invert: hsl(34, 8%, 16%);
-	--color-sys-invert-highlight: hsl(34, 8%, 10%);
+	--color-system-invert: var(--7-Darkest);
+	--color-system-invert-highlight: var(--8-Black);
 
 	--color-link-main: hsl(290, 100%, 90%);
 	--color-link-slight: hsl(290, 100%, 80%);
