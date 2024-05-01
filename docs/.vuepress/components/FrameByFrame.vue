@@ -9,7 +9,7 @@
 	grid-template-columns: 1fr;
 	overflow: hidden;
 	border-radius: var(--border-radius-md);
-	border: 1px solid var(--color-sys-main);
+	border: 1px solid var(--color-system-main);
 	margin-block: var(--space-m);
 	box-shadow: var(--shadow-lg);
 }
