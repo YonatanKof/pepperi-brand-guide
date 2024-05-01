@@ -25,8 +25,8 @@ Our logo have a few variants in which it appear:
         image-start="/logo/Pepperi-Icon.svg"
         image-end="/logo/Pepperi-Typeface.svg"
         image-width-start="calc(var(--space-2xl) * 1.8)"
-        bg-start="var(--1-Bright)" 
-        bg-end="var(--0-White)"/>
+        bg-start="var(--color-grey-1-bright)" 
+        bg-end="var(--color-grey-0-white)"/>
     <PicsFrame 
         title-start="Extra small logo" 
         title-End="Extra small logo, icon only" 
@@ -46,12 +46,12 @@ In terms of background colors, you can use the logo in `Primary-Brand` in follow
     <PicsFrame 
         title-start="Logo used on White" 
         title-end="Logo used on Bright" 
-        bg-end="var(--1-Bright)"/>
+        bg-end="var(--color-grey-1-bright)"/>
     <PicsFrame 
         title-start="Logo used on Lighter" 
         title-end="Logo used on Darkest" 
-        bg-start="var(--2-Lighter)"
-        bg-end="var(--7-Darkest)"
+        bg-start="var(--color-grey-2-lighter)"
+        bg-end="var(--color-grey-7-darkest)"
         :is-dark-end="true"/>
 </FrameByFrame>
 
@@ -67,8 +67,8 @@ For example, as an additional slide in a presentation or in a footer element. **
         title-end="White logo on Primary-Contrast" 
         image-start="/logo/Pepperi-Logo-Invert.svg"
         image-end="/logo/Pepperi-Logo-Invert.svg"
-        bg-start="var(--7-Darkest)"
-        bg-end="var(--Primary-Contrast)"
+        bg-start="var(--color-grey-7-darkest)"
+        bg-end="var(--color-primary-contrast)"
         :is-dark-start="true"
         :is-dark-end="true"/>
 </FrameByFrame>
@@ -79,20 +79,20 @@ We can use the logo in many different ways, but there ways we can not, here are 
 
 <FrameByFrame id="forbidden-color">
     <PicsFrame 
-        title-start="Logo on Secondary-Brand" 
+        title-start="Logo on --color-primary-secondary-brand" 
         title-end="Logo on Tertiary-Brand" 
-        bg-start="var(--Secondary-Brand)"
-        bg-end="var(--Tertiary-Brand)"
+        bg-start="var(--color-primary-secondary-brand)"
+        bg-end="var(--color-primary-tertiary-brand)"
         :is-dark-start="true"
         :good-to-use-start="false"
         :good-to-use-end="false"/>
     <PicsFrame 
-        title-end="White logo on Secondary-Brand" 
+        title-end="White logo on --color-primary-secondary-brand" 
         title-start="White logo on Tertiary-Brand" 
         image-end="/logo/Pepperi-Logo-Invert.svg"
         image-start="/logo/Pepperi-Logo-Invert.svg"
-        bg-end="var(--Secondary-Brand)"
-        bg-start="var(--Tertiary-Brand)"
+        bg-end="var(--color-primary-secondary-brand)"
+        bg-start="var(--color-primary-tertiary-brand)"
         :is-dark-end="true"
         :good-to-use-start="false"
         :good-to-use-end="false"/>
@@ -100,7 +100,7 @@ We can use the logo in many different ways, but there ways we can not, here are 
         title-start="Any other color then approved" 
         title-end="Any other color then approved" 
         bg-start="var(--color-link-main)"
-        bg-end="var(--4-Base)"
+        bg-end="var(--color-grey-4-base)"
         :is-dark-start="true"
         :good-to-use-start="false"
         :good-to-use-end="false"/>
@@ -115,16 +115,16 @@ We can use the logo in many different ways, but there ways we can not, here are 
         title-start="Don't use any kind of shadow" 
         title-end="Don't use any kind of glow" 
         filter-start="drop-shadow(0.2em 0.2em 0.2em #00000050)"
-        filter-end="drop-shadow(0 0 0.5em var(--Tertiary-Brand))"
+        filter-end="drop-shadow(0 0 0.5em var(--color-primary-tertiary-brand))"
         :good-to-use-start="false"
         :good-to-use-end="false"/>
     <PicsFrame 
         title-start="Don't place logo over an image" 
         title-end="Don't place logo over a gradient" 
         bg-start="url(/images/Depositphotos_146416039_XL.jpg) center / cover"
-        bg-end="linear-gradient(217deg, var(--Tertiary-Brand), rgba(255, 0, 0, 0) 70.71%),
-                linear-gradient(127deg, var(--Secondary-Brand), rgba(0, 255, 0, 0) 70.71%),
-                linear-gradient(336deg, var(--1-Bright), rgba(0, 0, 255, 0) 70.71%)"
+        bg-end="linear-gradient(217deg, var(--color-primary-tertiary-brand), rgba(255, 0, 0, 0) 70.71%),
+                linear-gradient(127deg, var(--color-primary-secondary-brand), rgba(0, 255, 0, 0) 70.71%),
+                linear-gradient(336deg, var(--color-grey-1-bright), rgba(0, 0, 255, 0) 70.71%)"
         :good-to-use-start="false"
         :good-to-use-end="false"/>
 </FrameByFrame>

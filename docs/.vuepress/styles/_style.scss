@@ -5,24 +5,24 @@ $MQMobileNarrow: 419px !default;
 // Vars
 :root {
 
---Primary-Brand: hsl(79, 68%, 32%);
---Primary-Contrast: hsl(79, 68%, 23%);
---Secondary-Brand: hsl(17, 100%, 50%);
---Secondary-Contrast: hsl(17, 100%, 40%);
---Tertiary-Brand: hsl(38, 100%, 50%);
---Tertiary-Contrast: hsl(38, 100%, 30%);
---Caution: hsl(9, 90%, 47%);
---Success: hsl(120, 100%, 20%);
+--color-primary-brand: hsl(79, 68%, 32%);
+--color-primary-contrast: hsl(79, 68%, 23%);
+--color-primary-secondary-brand: hsl(17, 100%, 50%);
+--color-primary-secondary-contrast: hsl(17, 100%, 40%);
+--color-primary-tertiary-brand: hsl(38, 100%, 50%);
+--color-primary-tertiary-contrast: hsl(38, 100%, 30%);
+--color-caution: hsl(9, 90%, 47%);
+--color-success: hsl(120, 100%, 20%);
 
---0-White: hsl(0, 0%, 100%);
---1-Bright: hsl(0, 0%, 97%);
---2-Lighter: hsl(0, 0%, 94%);
---3-Light: hsl(0, 0%, 80%);
---4-Base: hsl(0, 0%, 60%);
---5-Shade: hsl(0, 0%, 35%);
---6-Dark: hsl(0, 0%, 20%);
---7-Darkest: hsl(0, 0%, 10%);
---8-Black: hsl(0, 0%, 0%);
+--color-grey-0-white: hsl(0, 0%, 100%);
+--color-grey-1-bright: hsl(0, 0%, 97%);
+--color-grey-2-lighter: hsl(0, 0%, 94%);
+--color-grey-3-light: hsl(0, 0%, 80%);
+--color-grey-4-base: hsl(0, 0%, 60%);
+--color-grey-5-shade: hsl(0, 0%, 35%);
+--color-grey-6-dark: hsl(0, 0%, 20%);
+--color-grey-7-darkest: hsl(0, 0%, 10%);
+--color-grey-8-black: hsl(0, 0%, 0%);
 
 --header-height: var(--space-4xl);
 --border-radius-sm: var(--space-3xs);
@@ -30,15 +30,15 @@ $MQMobileNarrow: 419px !default;
 
 // --content-width:800px;
 
---color-system-main: var(--7-Darkest);
---color-system-dimmed: color-mix(in srgb, var(--color-system-main) 75%, transparent);;
---color-system-disabled: color-mix(in srgb, var(--color-system-main) 35%, transparent);;
---color-system-muted: color-mix(in srgb, var(--color-system-main) 10%, transparent);;
---color-system-none: color-mix(in srgb, var(--color-system-main) 0%, transparent);;
+--color-system-main: var(--color-grey-7-darkest);
+--color-system-dimmed: color-mix(in srgb, var(--color-system-main) 75%, transparent);
+--color-system-disabled: color-mix(in srgb, var(--color-system-main) 35%, transparent);
+--color-system-muted: color-mix(in srgb, var(--color-system-main) 10%, transparent);
+--color-system-none: color-mix(in srgb, var(--color-system-main) 0%, transparent);
 
 --color-system-invert-grad: linear-gradient(225deg, hsl(20, 50%, 95%) 0%, hsl(20, 70%, 85%) 100%);
---color-system-invert: var(--0-White);
---color-system-invert-highlight: var(--2-Lighter);
+--color-system-invert: var(--color-grey-0-white);
+--color-system-invert-highlight: var(--color-grey-2-lighter);
 
 --color-link-main: hsl(207, 76%, 37%);
 --color-link-slight: hsl(207, 76%, 57%);
@@ -53,8 +53,8 @@ $MQMobileNarrow: 419px !default;
 
 // Overrides
 // brand colors
---c-brand: var(--Primary-Contrast);
---c-brand-light: var(--Primary-Brand);
+--c-brand: var(--color-primary-contrast);
+--c-brand-light: var(--color-primary-brand);
 
 // text colors
 --c-text: var(--color-system-main);
@@ -128,10 +128,10 @@ hr {
 	object-fit: cover;
 }
 .dark {
-	--color-system-main: var(--0-White);
+	--color-system-main: var(--color-grey-0-white);
 
-	--color-system-invert: var(--7-Darkest);
-	--color-system-invert-highlight: var(--8-Black);
+	--color-system-invert: var(--color-grey-7-darkest);
+	--color-system-invert-highlight: var(--color-grey-8-black);
 
 	--color-link-main: hsl(290, 100%, 90%);
 	--color-link-slight: hsl(290, 100%, 80%);
@@ -139,8 +139,8 @@ hr {
 	--color-focus-main: hsl(200, 100%, 40%);
 	--color-focus-slight: hsl(200, 100%, 60%);
 
-	--Caution: #ff3e17;
-	--Success: #48d800;
+	--color-caution: #ff3e17;
+	--color-success: #48d800;
 }
 
 .logo {
