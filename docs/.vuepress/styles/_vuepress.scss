@@ -84,7 +84,7 @@ li {
 	padding-inline-start: var(--space-3xs);
 }
 li::marker {
-	color: var(--color-primary-secondary-contrast);
+	color: var(--color-secondary-contrast);
 	margin-right: 1ch;
 }
 ol li::marker {
@@ -118,7 +118,7 @@ ol li::marker {
 	p {
 		margin: unset;
 	}
-	border-inline-start: var(--space-4xs) var(--color-primary-secondary-brand) dotted;
+	border-inline-start: var(--space-4xs) var(--color-secondary-brand) dotted;
 	padding-inline-start: var(--space-xs);
 	@media (width <= $MQNarrow) {
 		p {

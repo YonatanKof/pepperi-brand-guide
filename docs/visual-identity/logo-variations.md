@@ -79,20 +79,20 @@ We can use the logo in many different ways, but there ways we can not, here are 
 
 <FrameByFrame id="forbidden-color">
     <PicsFrame 
-        title-start="Logo on --color-primary-secondary-brand" 
+        title-start="Logo on --color-secondary-brand" 
         title-end="Logo on Tertiary-Brand" 
-        bg-start="var(--color-primary-secondary-brand)"
-        bg-end="var(--color-primary-tertiary-brand)"
+        bg-start="var(--color-secondary-brand)"
+        bg-end="var(--color-tertiary-brand)"
         :is-dark-start="true"
         :good-to-use-start="false"
         :good-to-use-end="false"/>
     <PicsFrame 
-        title-end="White logo on --color-primary-secondary-brand" 
+        title-end="White logo on --color-secondary-brand" 
         title-start="White logo on Tertiary-Brand" 
         image-end="/logo/Pepperi-Logo-Invert.svg"
         image-start="/logo/Pepperi-Logo-Invert.svg"
-        bg-end="var(--color-primary-secondary-brand)"
-        bg-start="var(--color-primary-tertiary-brand)"
+        bg-end="var(--color-secondary-brand)"
+        bg-start="var(--color-tertiary-brand)"
         :is-dark-end="true"
         :good-to-use-start="false"
         :good-to-use-end="false"/>
@@ -115,15 +115,15 @@ We can use the logo in many different ways, but there ways we can not, here are 
         title-start="Don't use any kind of shadow" 
         title-end="Don't use any kind of glow" 
         filter-start="drop-shadow(0.2em 0.2em 0.2em #00000050)"
-        filter-end="drop-shadow(0 0 0.5em var(--color-primary-tertiary-brand))"
+        filter-end="drop-shadow(0 0 0.5em var(--color-tertiary-brand))"
         :good-to-use-start="false"
         :good-to-use-end="false"/>
     <PicsFrame 
         title-start="Don't place logo over an image" 
         title-end="Don't place logo over a gradient" 
         bg-start="url(/images/Depositphotos_146416039_XL.jpg) center / cover"
-        bg-end="linear-gradient(217deg, var(--color-primary-tertiary-brand), rgba(255, 0, 0, 0) 70.71%),
-                linear-gradient(127deg, var(--color-primary-secondary-brand), rgba(0, 255, 0, 0) 70.71%),
+        bg-end="linear-gradient(217deg, var(--color-tertiary-brand), rgba(255, 0, 0, 0) 70.71%),
+                linear-gradient(127deg, var(--color-secondary-brand), rgba(0, 255, 0, 0) 70.71%),
                 linear-gradient(336deg, var(--color-grey-1-bright), rgba(0, 0, 255, 0) 70.71%)"
         :good-to-use-start="false"
         :good-to-use-end="false"/>
