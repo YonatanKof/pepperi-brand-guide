@@ -2,7 +2,8 @@
 
 A place to find Pepperi's brand guidelines, download brand assets, and review user persona
 
-[Link to site](https://pepperi-brand-guide.netlify.app/)
+- [Link to site](https://pepperi-brand-guide.netlify.app/)
+- [Link to deploy preview](https://deploy-preview-1--pepperi-brand-guide.netlify.app/)
 
 # Dev notes
 - Local dev `pnpm docs:dev`
