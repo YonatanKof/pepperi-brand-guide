@@ -25,8 +25,8 @@ Our logo have a few variants in which it appear:
         image-start="/logo/Pepperi-Icon.svg"
         image-end="/logo/Pepperi-Typeface.svg"
         image-width-start="calc(var(--space-2xl) * 1.8)"
-        bg-start="var(--color-grey-1-bright)" 
-        bg-end="var(--color-grey-0-white)"/>
+        bg-start="var(--color-mono-1-bright)" 
+        bg-end="var(--color-mono-0-white)"/>
     <PicsFrame 
         title-start="Extra small logo" 
         title-End="Extra small logo, icon only" 
@@ -46,12 +46,12 @@ In terms of background colors, you can use the logo in `Primary-Brand` in follow
     <PicsFrame 
         title-start="Logo used on White" 
         title-end="Logo used on Bright" 
-        bg-end="var(--color-grey-1-bright)"/>
+        bg-end="var(--color-mono-1-bright)"/>
     <PicsFrame 
         title-start="Logo used on Lighter" 
         title-end="Logo used on Darkest" 
-        bg-start="var(--color-grey-2-lighter)"
-        bg-end="var(--color-grey-7-darkest)"
+        bg-start="var(--color-mono-2-lighter)"
+        bg-end="var(--color-mono-7-darkest)"
         :is-dark-end="true"/>
 </FrameByFrame>
 
@@ -67,7 +67,7 @@ For example, as an additional slide in a presentation or in a footer element. **
         title-end="White logo on Primary-Contrast" 
         image-start="/logo/Pepperi-Logo-Invert.svg"
         image-end="/logo/Pepperi-Logo-Invert.svg"
-        bg-start="var(--color-grey-7-darkest)"
+        bg-start="var(--color-mono-7-darkest)"
         bg-end="var(--color-primary-contrast)"
         :is-dark-start="true"
         :is-dark-end="true"/>
@@ -100,7 +100,7 @@ We can use the logo in many different ways, but there ways we can not, here are 
         title-start="Any other color then approved" 
         title-end="Any other color then approved" 
         bg-start="var(--color-link-main)"
-        bg-end="var(--color-grey-4-base)"
+        bg-end="var(--color-mono-4-base)"
         :is-dark-start="true"
         :good-to-use-start="false"
         :good-to-use-end="false"/>
@@ -124,7 +124,7 @@ We can use the logo in many different ways, but there ways we can not, here are 
         bg-start="url(/images/Depositphotos_146416039_XL.jpg) center / cover"
         bg-end="linear-gradient(217deg, var(--color-tertiary-brand), rgba(255, 0, 0, 0) 70.71%),
                 linear-gradient(127deg, var(--color-secondary-brand), rgba(0, 255, 0, 0) 70.71%),
-                linear-gradient(336deg, var(--color-grey-1-bright), rgba(0, 0, 255, 0) 70.71%)"
+                linear-gradient(336deg, var(--color-mono-1-bright), rgba(0, 0, 255, 0) 70.71%)"
         :good-to-use-start="false"
         :good-to-use-end="false"/>
 </FrameByFrame>

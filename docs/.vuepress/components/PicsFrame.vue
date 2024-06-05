@@ -26,11 +26,11 @@ defineProps({
 	},
 	bgStart: {
 		type: String,
-		default: 'var(--color-grey-0-white)',
+		default: 'var(--color-mono-0-white)',
 	},
 	bgEnd: {
 		type: String,
-		default: 'var(--color-grey-1-bright)',
+		default: 'var(--color-mono-1-bright)',
 	},
 	goodToUseStart: {
 		type: Boolean,
