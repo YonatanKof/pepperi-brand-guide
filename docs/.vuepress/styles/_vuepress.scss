@@ -132,3 +132,12 @@ ol li::marker {
 .home .footer {
 	margin-block-start: var(--space-l);
 }
+
+.sidebar-item.active:not(p.sidebar-heading) {
+	text-decoration: underline;
+}
+
+// .sidebar-item.active:not(p.sidebar-heading),
+// a.sidebar-item:hover {
+// 	color: var(--color-link-main);
+// }
