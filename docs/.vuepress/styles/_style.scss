@@ -5,24 +5,22 @@ $MQMobileNarrow: 419px !default;
 // Vars
 :root {
 
---Primary-Brand: hsl(79, 68%, 32%);
---Primary-Contrast: hsl(79, 68%, 23%);
---Secondary-Brand: hsl(17, 100%, 50%);
---Secondary-Contrast: hsl(17, 100%, 40%);
---Tertiary-Brand: hsl(38, 100%, 50%);
---Tertiary-Contrast: hsl(38, 100%, 30%);
---Caution: hsl(9, 90%, 47%);
---Success: hsl(120, 100%, 20%);
+--color-primary-brand: hsl(79, 68%, 32%);
+--color-primary-contrast: hsl(79, 68%, 23%);
+--color-secondary-brand: hsl(17, 100%, 50%);
+--color-secondary-contrast: hsl(17, 100%, 40%);
+--color-tertiary-brand: hsl(38, 100%, 50%);
+--color-tertiary-contrast: hsl(38, 100%, 30%);
 
---0-White: hsl(0, 0%, 100%);
---1-Bright: hsl(0, 0%, 97%);
---2-Lighter: hsl(0, 0%, 94%);
---3-Light: hsl(0, 0%, 80%);
---4-Base: hsl(0, 0%, 60%);
---5-Shade: hsl(0, 0%, 35%);
---6-Dark: hsl(0, 0%, 20%);
---7-Darkest: hsl(0, 0%, 10%);
---8-Black: hsl(0, 0%, 0%);
+--color-mono-0-white: hsl(0, 0%, 100%);
+--color-mono-1-bright: hsl(0, 0%, 97%);
+--color-mono-2-lighter: hsl(0, 0%, 94%);
+--color-mono-3-light: hsl(0, 0%, 80%);
+--color-mono-4-base: hsl(0, 0%, 60%);
+--color-mono-5-shade: hsl(0, 0%, 35%);
+--color-mono-6-dark: hsl(0, 0%, 20%);
+--color-mono-7-darkest: hsl(0, 0%, 10%);
+--color-mono-8-black: hsl(0, 0%, 0%);
 
 --header-height: var(--space-4xl);
 --border-radius-sm: var(--space-3xs);
@@ -30,21 +28,32 @@ $MQMobileNarrow: 419px !default;
 
 // --content-width:800px;
 
---color-system-main: var(--7-Darkest);
---color-system-dimmed: color-mix(in srgb, var(--color-system-main) 75%, transparent);;
---color-system-disabled: color-mix(in srgb, var(--color-system-main) 35%, transparent);;
---color-system-muted: color-mix(in srgb, var(--color-system-main) 10%, transparent);;
---color-system-none: color-mix(in srgb, var(--color-system-main) 0%, transparent);;
-
---color-system-invert-grad: linear-gradient(225deg, hsl(20, 50%, 95%) 0%, hsl(20, 70%, 85%) 100%);
---color-system-invert: var(--0-White);
---color-system-invert-highlight: var(--2-Lighter);
+--color-system-main: var(--color-mono-7-darkest);
+--color-system-dimmed: color-mix(in srgb, var(--color-system-main) 75%, transparent);
+--color-system-disabled: color-mix(in srgb, var(--color-system-main) 35%, transparent);
+--color-system-muted: color-mix(in srgb, var(--color-system-main) 10%, transparent);
 
 --color-link-main: hsl(207, 76%, 37%);
---color-link-slight: hsl(207, 76%, 57%);
+--color-link-dimmed: color-mix(in srgb, var(--color-link-main) 75%, transparent);
+--color-link-disabled: color-mix(in srgb, var(--color-link-main) 35%, transparent);
+--color-link-muted: color-mix(in srgb, var(--color-link-main) 10%, transparent);
 
 --color-focus-main: var(--color-link-main);
---color-focus-slight: var(--color-link-slight);
+--color-focus-dimmed: color-mix(in srgb, var(--color-link-main) 75%, transparent);
+
+--color-caution-main: hsl(0, 100%, 45%);
+--color-caution-dimmed: color-mix(in srgb, var(--color-caution-main) 75%, transparent);
+--color-caution-disabled: color-mix(in srgb, var(--color-caution-main) 35%, transparent);
+--color-caution-muted: color-mix(in srgb, var(--color-caution-main) 10%, transparent);
+
+--color-success-main: hsl(120, 100%, 20%);
+--color-success-dimmed: color-mix(in srgb, var(--color-success-main) 75%, transparent);
+--color-success-disabled: color-mix(in srgb, var(--color-success-main) 35%, transparent);
+--color-success-muted: color-mix(in srgb, var(--color-success-main) 10%, transparent);
+
+--color-system-invert-grad: linear-gradient(225deg, hsl(20, 50%, 95%) 0%, hsl(20, 70%, 85%) 100%);
+--color-system-invert: var(--color-mono-0-white);
+--color-system-invert-highlight: var(--color-mono-2-lighter);
 
 --bg-primary: var(--color-system-invert);
 --content-space: 1rem;
@@ -53,8 +62,8 @@ $MQMobileNarrow: 419px !default;
 
 // Overrides
 // brand colors
---c-brand: var(--Primary-Contrast);
---c-brand-light: var(--Primary-Brand);
+--c-brand: var(--color-primary-contrast);
+--c-brand-light: var(--color-primary-brand);
 
 // text colors
 --c-text: var(--color-system-main);
@@ -128,19 +137,17 @@ hr {
 	object-fit: cover;
 }
 .dark {
-	--color-system-main: var(--0-White);
+	--color-system-main: var(--color-mono-0-white);
 
-	--color-system-invert: var(--7-Darkest);
-	--color-system-invert-highlight: var(--8-Black);
+	--color-system-invert: var(--color-mono-7-darkest);
+	--color-system-invert-highlight: var(--color-mono-8-black);
 
 	--color-link-main: hsl(290, 100%, 90%);
-	--color-link-slight: hsl(290, 100%, 80%);
 
 	--color-focus-main: hsl(200, 100%, 40%);
-	--color-focus-slight: hsl(200, 100%, 60%);
 
-	--Caution: #ff3e17;
-	--Success: #48d800;
+	--color-caution: #ff3e17;
+	--color-success: #48d800;
 }
 
 .logo {
