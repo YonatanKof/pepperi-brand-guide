@@ -29,6 +29,9 @@
 	padding-block-end: unset;
 	border: unset;
 }
+.theme-default-content a:not(.header-anchor):hover {
+	text-decoration: none;
+}
 a.sidebar-item {
 	font-size: var(--step-0);
 }
@@ -40,20 +43,23 @@ a.sidebar-item {
 	font-size: var(--step--1);
 }
 
-h1 .header-anchor:hover::before,
-h2 .header-anchor:hover::before,
-h3 .header-anchor:hover::before,
-h4 .header-anchor:hover::before,
-h5 .header-anchor:hover::before,
-h6 .header-anchor:hover::before {
-	font-family: var(--font-hand);
-	content: '#';
-	position: absolute;
-	left: -1em;
-	color: var(--c-brand);
-	bottom: 0.3em;
+:is(h1, h2, h3, h4, h5, h6) .header-anchor {
+	border: none;
+	&:hover {
+		border: none;
+		&::before {
+			font-family: var(--font-hand);
+			content: '#';
+			position: absolute;
+			left: -1em;
+			color: var(--c-brand);
+			bottom: 0.3em;
+		}
+	}
 }
-
+.sidebar-item{
+	border: none;
+}
 .home .hero img {
 	height: auto;
 	max-width: 32rem;
@@ -92,7 +98,7 @@ ol li::marker {
 	font-size-adjust: 0.6;
 }
 .sidebar-item-children .sidebar-item-children .sidebar-item:not(.sidebar-heading).active {
-	font-weight: bold;
+	font-weight: unset;
 }
 .home .features {
 	display: grid;
@@ -136,8 +142,3 @@ ol li::marker {
 .sidebar-item.active:not(p.sidebar-heading) {
 	text-decoration: underline;
 }
-
-// .sidebar-item.active:not(p.sidebar-heading),
-// a.sidebar-item:hover {
-// 	color: var(--color-link-main);
-// }
