@@ -26,11 +26,11 @@ defineProps({
 	},
 	bgStart: {
 		type: String,
-		default: 'var(--0-White)',
+		default: 'var(--color-mono-0-white)',
 	},
 	bgEnd: {
 		type: String,
-		default: 'var(--1-Bright)',
+		default: 'var(--color-mono-1-bright)',
 	},
 	goodToUseStart: {
 		type: Boolean,
@@ -67,41 +67,51 @@ defineProps({
 });
 </script>
 <template>
-	<div class="pic-row">
-		<div class="frame" :style="{ background: bgStart }">
-			<div :class="{ dark: isDarkStart }" class="title-box">
-				<p>{{ titleStart }}</p>
-				<DoDont :is-good="goodToUseStart" />
+	<span>
+		<div class="pic-row">
+			<div class="frame" :style="{ background: bgStart }">
+				<div :class="{ dark: isDarkStart }" class="title-box">
+					<p>{{ titleStart }}</p>
+					<DoDont :is-good="goodToUseStart" />
+				</div>
+				<div class="image-box">
+					<img
+						class="this-image"
+						:style="{ maxWidth: imageWidthStart, filter: filterStart }"
+						:src="imageStart"
+						:alt="titleStart"
+					/>
+				</div>
 			</div>
-			<div class="image-box">
-				<img
-					class="this-image"
-					:style="{ maxWidth: imageWidthStart, filter: filterStart }"
-					:src="imageStart"
-					:alt="titleStart"
-				/>
+			<div class="frame" :style="{ background: bgEnd }">
+				<div :class="{ dark: isDarkEnd }" class="title-box">
+					<p>{{ titleEnd }}</p>
+					<DoDont :is-good="goodToUseEnd" />
+				</div>
+				<div class="image-box">
+					<img
+						class="this-image"
+						:style="{ maxWidth: imageWidthEnd, filter: filterEnd }"
+						:src="imageEnd"
+						:alt="titleEnd"
+					/>
+				</div>
 			</div>
 		</div>
-		<div class="frame" :style="{ background: bgEnd }">
-			<div :class="{ dark: isDarkEnd }" class="title-box">
-				<p>{{ titleEnd }}</p>
-				<DoDont :is-good="goodToUseEnd" />
-			</div>
-			<div class="image-box">
-				<img
-					class="this-image"
-					:style="{ maxWidth: imageWidthEnd, filter: filterEnd }"
-					:src="imageEnd"
-					:alt="titleEnd"
-				/>
-			</div>
-		</div>
-	</div>
+	</span>
 </template>
 
 <style lang="scss" scoped>
+span {
+	color: blue;
+	container-name: pics;
+	container-type: inline-size;
+}
 .title-box {
-	background-color: var(--color-sys-dis);
+	background-color: var(--color-system-muted);
+	// background-color: color(from var(--color-system-main) xyz x y z / 0.1);
+	// background-color: rgb(from var(--color-system-main) r g b / 0.1);
+	// background-color: hsl(from var(--color-system-main) h s l / 0.1);
 	padding: var(--space-xs);
 	display: flex;
 	flex-direction: row;
@@ -109,13 +119,12 @@ defineProps({
 	p {
 		margin: unset;
 		font-size: var(--step--1);
-		color: var(--color-sys-main);
+		color: var(--color-system-main);
 	}
 }
 .image-box {
 	padding: var(--space-xl);
 	display: flex;
-	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
@@ -123,6 +132,14 @@ defineProps({
 	display: flex;
 	flex-direction: row;
 }
+
+
+@container pics (width <= 480px) {
+	.pic-row {
+		flex-direction: column;
+	}
+}
+
 .frame {
 	display: grid;
 	grid-template-rows: auto 1fr;

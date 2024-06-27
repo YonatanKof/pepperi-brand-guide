@@ -1,0 +1,41 @@
+:root {
+	--color-primary-brand: hsl(79, 68%, 32%);
+	--color-primary-contrast: hsl(79, 68%, 23%);
+	--color-secondary-brand: hsl(17, 100%, 50%);
+	--color-secondary-contrast: hsl(17, 100%, 40%);
+	--color-tertiary-brand: hsl(38, 100%, 50%);
+	--color-tertiary-contrast: hsl(38, 100%, 30%);
+
+	--color-mono-0-white: hsl(0, 0%, 100%);
+	--color-mono-1-bright: hsl(0, 0%, 97%);
+	--color-mono-2-lighter: hsl(0, 0%, 94%);
+	--color-mono-3-light: hsl(0, 0%, 80%);
+	--color-mono-4-base: hsl(0, 0%, 60%);
+	--color-mono-5-shade: hsl(0, 0%, 35%);
+	--color-mono-6-dark: hsl(0, 0%, 20%);
+	--color-mono-7-darkest: hsl(0, 0%, 10%);
+	--color-mono-8-black: hsl(0, 0%, 0%);
+
+	--color-system-main: var(--color-mono-7-darkest);
+	--color-system-dimmed: color-mix(in srgb, var(--color-system-main) 75%, transparent);
+	--color-system-disabled: color-mix(in srgb, var(--color-system-main) 35%, transparent);
+	--color-system-muted: color-mix(in srgb, var(--color-system-main) 10%, transparent);
+
+	--color-link-main: hsl(207, 76%, 37%);
+	--color-link-dimmed: color-mix(in srgb, var(--color-link-main) 75%, transparent);
+	--color-link-disabled: color-mix(in srgb, var(--color-link-main) 35%, transparent);
+	--color-link-muted: color-mix(in srgb, var(--color-link-main) 10%, transparent);
+
+	--color-focus-main: var(--color-link-main);
+	--color-focus-dimmed: color-mix(in srgb, var(--color-link-main) 75%, transparent);
+
+	--color-caution-main: hsl(0, 100%, 45%);
+	--color-caution-dimmed: color-mix(in srgb, var(--color-caution-main) 75%, transparent);
+	--color-caution-disabled: color-mix(in srgb, var(--color-caution-main) 35%, transparent);
+	--color-caution-muted: color-mix(in srgb, var(--color-caution-main) 10%, transparent);
+
+	--color-success-main: hsl(120, 100%, 20%);
+	--color-success-dimmed: color-mix(in srgb, var(--color-success-main) 75%, transparent);
+	--color-success-disabled: color-mix(in srgb, var(--color-success-main) 35%, transparent);
+	--color-success-muted: color-mix(in srgb, var(--color-success-main) 10%, transparent);
+}

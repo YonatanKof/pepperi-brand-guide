@@ -15,45 +15,47 @@
 }
 @font-face {
 	font-family: 'Nexa';
+	font-feature-settings: "ss02";
 	font-style: normal;
 	font-weight: 400;
 	src: url('/fonts/Nexa-Regular.woff') format('woff'), url('/fonts/Nexa-Regular.woff2') format('woff2');
 }
 @font-face {
-	font-family: 'NexaBold';
+	font-family: 'Nexa';
+	font-feature-settings: "ss02";
 	font-style: normal;
 	font-weight: 800;
 	src: url('/fonts/Nexa-Heavy.woff') format('woff'), url('/fonts/Nexa-Heavy.woff2') format('woff2');
 }
+@font-face {
+	font-family: 'Caveat';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/fonts/caveat-latin-400-normal.woff') format('woff'),
+		url('/fonts/caveat-latin-400-normal.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'Caveat';
+	font-style: normal;
+	font-weight: 700;
+	src: url('/fonts/caveat-latin-700-normal.woff') format('woff'),
+		url('/fonts/caveat-latin-400-normal.woff2') format('woff2');
+}
+
 :root {
 	--font-body: Inter, system-ui, sans-serif;
 	--font-mono: RecVar, system-ui, sans-serif;
 	--font-title: Nexa, system-ui, sans-serif;
-	--font-hand: system-ui, sans-serif;
+	--font-hand: Caveat, system-ui, sans-serif;
 }
 body,
 html {
 	font-family: var(--font-body);
 	font-size: var(--step-0);
 	line-height: 1.5;
-	color: var(--color-sys-main);
+	color: var(--color-system-main);
 }
-// p,
-// h1,
-// h2,
-// h3,
-// h4,
-// h5,
-// h6,
-// em,
-// label,
-// input,
-// textarea,
-// li,
-// a {
-// 	font-family: var(--font-body);
-// 	font-size: var(--step--3);
-// }
+
 p {
 	margin-block-end: 0.5em;
 }
@@ -65,9 +67,9 @@ ul,
 ol,
 li,
 blockquote {
-	// max-width: 56ch;
+	// max-width: 64ch;
 	text-wrap: pretty;
-	color: var(--color-sys-slight);
+	color: var(--color-system-dimmed);
 }
 h1,
 h2,
@@ -85,47 +87,58 @@ h6 > a {
 	font-family: var(--font-title);
 	text-wrap: balance;
 	margin-block-end: 0.5em;
-	strong {
-		font-family: NexaBold;
-	}
+	font-weight: bold;
+}
+h1,
+h1 > a{
+	font-weight: normal;
+
 }
 i,
 em {
 	font-style: italic;
 	letter-spacing: 0.0625em;
+	// font-family: var(--font-hand);
+	// font-weight: 700;
+	// font-size: 125%;
 }
 strong {
 	font-weight: bold;
 }
-h1, h1 > a {
+h1,
+h1 > a {
 	font-size: var(--step-6);
 }
-h2, h2 > a {
+h2,
+h2 > a {
 	font-size: var(--step-5);
 }
-h3, h3 > a {
+h3,
+h3 > a {
 	font-size: var(--step-4);
 }
-h4, h4 > a {
+h4,
+h4 > a {
 	font-size: var(--step-3);
 }
-h5, h5 > a {
+h5,
+h5 > a {
 	font-size: var(--step-2);
 }
-h6, h6 > a {
+h6,
+h6 > a {
 	font-size: var(--step-1);
 }
-
 @mixin focus {
 	&:focus-visible {
 		outline: none;
 	}
 	&:focus {
-		box-shadow: 0 0 0 var(--space-3xs) var(--color-focus-slight);
+		box-shadow: 0 0 0 var(--space-3xs) var(--color-focus-dimmed);
 	}
 }
 a {
-	border-bottom: solid 1px var(--color-sys-none);
+	border-bottom: solid 1px var(--color-system-none);
 	transition: border-color 0.25s ease-in-out, font-weight 0.25s ease-in-out;
 	color: var(--color-link-main);
 	text-decoration: none;
@@ -139,19 +152,19 @@ a {
 	border-color: var(--color-link-main);
 	border-width: 2px;
 	&:hover {
-		border-color: var(--color-link-slight);
+		border-color: var(--color-link-dimmed);
 	}
 }
 
 code {
-	background-color: var(--color-sys-dis);
+	background-color: var(--color-system-muted);
 	padding: var(--space-4xs) var(--space-3xs);
 	border-radius: var(--border-radius-sm);
 	margin-block-end: var(--space-s);
 }
 pre {
 	position: relative;
-	background-color: var(--color-sys-invert-highlight);
+	background-color: var(--color-system-invert-highlight);
 	font-size: var(--step-1);
 	font-variation-settings: 'slnt' 0;
 	line-height: 1.6;
@@ -169,6 +182,7 @@ pre {
 	word-break: break-word;
 	white-space: break-spaces;
 	word-wrap: anywhere;
+	color: var(--color-system-main);
 }
 
 pre code {
@@ -178,5 +192,5 @@ pre code {
 	border-radius: unset;
 }
 .caution {
-	color: var(--Caution);
+	color: var(--color-caution);
 }

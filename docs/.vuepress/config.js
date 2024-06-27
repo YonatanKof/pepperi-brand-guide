@@ -9,7 +9,7 @@ const __dirname = getDirname(import.meta.url);
 
 export default defineUserConfig({
 	lang: 'en-US',
-	title: 'Pepperi Brand',
+	title: 'Pepperi Brand Guide',
 	description: "A place to find Pepperi's brand guidelines, download brand assets, and review user persona",
 	head: [['link', { rel: 'icon', href: '/images/favicon.png' }]],
 
