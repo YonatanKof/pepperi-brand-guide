@@ -96,17 +96,14 @@ h6 > a {
 	font-weight: bold;
 }
 h1,
-h1 > a{
+h1 > a {
 	font-weight: normal;
-
 }
 i,
 em {
-	font-style: italic;
-	letter-spacing: 0.0625em;
-	// font-family: var(--font-hand);
-	// font-weight: 700;
-	// font-size: 125%;
+	font-style: normal;
+	font-family: var(--font-hand);
+	font-variation-settings: 'INFM' 50, 'wght' 500, 'ital' 1;
 }
 strong {
 	font-weight: bold;
@@ -144,15 +141,18 @@ h6 > a {
 	}
 }
 a {
-	border-bottom: solid 1px var(--color-system-none);
-	transition: border-color 0.25s ease-in-out, font-weight 0.25s ease-in-out;
+	// font-family: var(--font-mono);
+	border-bottom: solid 1px color-mix(in srgb, var(--color-link-main) 0%, transparent);
+	// transition: border-color 0.25s ease-in-out, font-weight 0.25s ease-in-out;
+	transition: border-color 0.25s ease-in-out;
 	color: var(--color-link-main);
 	text-decoration: none;
 	width: max-content;
-	// &:hover {
-	// 	border-color: var(--color-link-main);
-	// 	font-weight: 600;
-	// }
+	&:hover {
+		text-decoration: none;
+		border-color: var(--color-link-main);
+		// 	font-weight: 600;
+	}
 }
 .router-link-active {
 	border-color: var(--color-link-main);
