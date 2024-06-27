@@ -41,12 +41,18 @@
 	src: url('/fonts/caveat-latin-700-normal.woff') format('woff'),
 		url('/fonts/caveat-latin-400-normal.woff2') format('woff2');
 }
+@font-face {
+	font-family: 'ShantellSans';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/fonts/ShantellSans[BNCE,INFM,SPAC,ital,wght].woff2') format('woff2');
+}
 
 :root {
 	--font-body: Inter, system-ui, sans-serif;
 	--font-mono: RecVar, system-ui, sans-serif;
 	--font-title: Nexa, system-ui, sans-serif;
-	--font-hand: Caveat, system-ui, sans-serif;
+	--font-hand: ShantellSans, system-ui, sans-serif;
 }
 body,
 html {
