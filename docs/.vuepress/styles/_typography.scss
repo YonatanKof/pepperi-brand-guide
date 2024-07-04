@@ -36,6 +36,12 @@
 	src: url('/fonts/ShantellSans[BNCE,INFM,SPAC,ital,wght].woff2') format('woff2');
 	font-display: swap;
 }
+@font-face {
+	font-family: 'ShantellSans';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/fonts/ShantellSans[BNCE,INFM,SPAC,ital,wght].woff2') format('woff2');
+}
 
 :root {
 	--font-body: Inter, system-ui, sans-serif;
