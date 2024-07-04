@@ -2,7 +2,9 @@
 
 Showcase your primary logo, variations for different applications, and clear usage guidelines
 
-## Logo variants
+[[toc]]
+
+## Logo Variants
 
 Our logo have a few variants in which it appear:
 
@@ -36,7 +38,9 @@ Our logo have a few variants in which it appear:
         image-end="/logo/Pepperi-Icon-XS.svg"/>
 </FrameByFrame>
 
-## Allowed colors, primary content
+## Allowed Usage  
+
+###  Primary content
 
 You can use the logo in `Primary-Brand` everywhere or in `White` in secondary content
 					
@@ -55,7 +59,7 @@ In terms of background colors, you can use the logo in `Primary-Brand` in follow
         :is-dark-end="true"/>
 </FrameByFrame>
 
-## Allowed colors, secondary content
+### Secondary content
 
 You can use these color combinations as secondary content. 
 
@@ -73,7 +77,9 @@ For example, as an additional slide in a presentation or in a footer element. **
         :is-dark-end="true"/>
 </FrameByFrame>
 
-## Forbidden color
+## Forbidden Usage 
+
+### Colors
 
 We can use the logo in many different ways, but there ways we can not, here are some of them 
 
@@ -106,9 +112,11 @@ We can use the logo in many different ways, but there ways we can not, here are 
         :good-to-use-end="false"/>
 </FrameByFrame>
 
-## Forbidden treatment and placement
+### Treatment
 
-We can use the logo in many different ways, but there ways we can not, here are some of them 
+We can use the logo in many different ways, <span style="color: var(--color-caution-main); font-weight: bold;">but there ways we can not!</span> 
+
+Here are some of them treatment you should avoid:
 
 <FrameByFrame id="forbidden-color">
     <PicsFrame 
@@ -128,3 +136,45 @@ We can use the logo in many different ways, but there ways we can not, here are 
         :good-to-use-start="false"
         :good-to-use-end="false"/>
 </FrameByFrame>
+
+## Logo Sizing 
+
+### Spacing
+
+The logo and icons should have minimum spacing of <span class="frac">1/4</span> of the icon size
+
+![yess](/images/LogoMinSpacing.webp)
+
+### Size variants
+
+When using the logo or icon in size of **32px or above** please use the *Regular* assets
+
+When using the logo or icon in size of **32px or below** please use the *Small* assets
+
+![yess](/images/LogoMinSize.webp)
+
+## Download assets
+
+### General
+
+Here you can find Pepperi logo variations (full logo, icon only, typeface only, vertical formation) as `png` or `svg` files
+  
+<DownloadFile 
+    file-link="/downloads/Assets-Pepperi-Logo-Icon.zip"
+    fileDesc="Download logo assets"
+/>
+
+### Extra Small
+Here you can find our logo in extra-small variant for use when is less then 32px. For example, in  a footer or a favicon.
+<DownloadFile 
+    file-link="/downloads/Assets-Pepperi-Small-Logo-Icon.zip"
+    fileDesc="Download extra small logo assets"
+/>
+
+### For Print
+
+If in need for print asset please download this or use `svg` found in the 1fst download.
+<DownloadFile 
+    file-link="/downloads/Assets-Logo_for_print.zip"
+    fileDesc="Download logo assets for print"
+/>

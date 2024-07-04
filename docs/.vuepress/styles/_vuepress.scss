@@ -57,7 +57,7 @@ a.sidebar-item {
 		}
 	}
 }
-.sidebar-item{
+.sidebar-item {
 	border: none;
 }
 .home .hero img {
@@ -141,4 +141,7 @@ ol li::marker {
 
 .sidebar-item.active:not(p.sidebar-heading) {
 	text-decoration: underline;
+}
+.site-name {
+	font-family: var(--font-title);
 }
