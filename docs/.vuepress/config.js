@@ -19,14 +19,21 @@ export default defineUserConfig({
 
 		navbar: [
 			'/',
-			// '/get-started',
+			'/brand-foundation/index.html',
 			'/visual-identity/index.html',
-			// {
-			// 	text: 'Visual Identity',
-			// 	link: '/visual-identity/logo-variations',
-			// },
 		],
 		sidebar: {
+			'/brand-foundation/': [
+				{
+					text: 'Brand Foundation',
+					children: [
+						'/brand-foundation/vision-and-mission.md',
+						'/brand-foundation/values-and-personality.md',
+						'/brand-foundation/brand-promise.md',
+						'/brand-foundation/target-audience.md',
+					],
+				},
+			],
 			'/visual-identity/': [
 				{
 					text: 'Visual Identity',
