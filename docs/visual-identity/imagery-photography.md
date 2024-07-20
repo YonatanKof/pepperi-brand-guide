@@ -1,3 +1,5 @@
 # Imagery & Photography
 
-Establish guidelines for image style, tone, and composition to maintain visual consistency
+This chapter establish guidelines for image style, icons, illustrations and composition to maintain visual consistency.
+
+> *WIP – Coming Soon*
