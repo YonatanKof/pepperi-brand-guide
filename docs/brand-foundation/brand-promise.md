@@ -1,6 +1,6 @@
 # Brand Promise
 
-Our brand promise is a clear and concise statement that packs our values and experience into a short punch. You can view our brand promise is our **tagline**.
+Our brand promise is a clear and concise statement that encapsulates our values and the experience we deliver. Think of our brand promise as our **tagline**:
 
 > Because Your Buyers and Reps Deserve the Best
 
