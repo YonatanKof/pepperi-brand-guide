@@ -11,7 +11,21 @@ export default defineUserConfig({
 	lang: 'en-US',
 	title: 'Pepperi Brand Guide',
 	description: "A place to find Pepperi's brand guidelines, download brand assets, and review user persona",
-	head: [['link', { rel: 'icon', href: '/images/favicon.png' }]],
+	head: [
+		['link', { rel: 'icon', href: '/images/favicon.png' }],
+		['meta', { property: 'og:url', content: 'https://brand.pepperi.com/' }],
+		['meta', { property: 'og:title', content: 'Pepperi Brand Guide' }],
+		['meta', { property: 'og:description', content: "A place to find Pepperi's brand guidelines, download brand assets, and review user persona" }],
+		['meta', { property: 'og:image', content: '/images/PepperiBrandGuide.jpg' }],
+		['meta', { property: 'og:type', content: 'website' }],
+
+		['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+		['meta', { name: 'twitter:site', content: '@PepperiHQ' }],
+		['meta', { name: 'twitter:creator', content: "@yonatankof" }],
+		['meta', { name: 'twitter:title', content: 'Pepperi Brand Guide' }],
+		['meta', { name: 'twitter:description', content: "A place to find Pepperi's brand guidelines, download brand assets, and review user persona" }],
+		['meta', { name: 'twitter:image', content: '/images/PepperiBrandGuide.jpg' }],
+	],
 
 	theme: defaultTheme({
 		colorModeSwitch: false,
