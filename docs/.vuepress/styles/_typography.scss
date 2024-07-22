@@ -134,9 +134,7 @@ h6 > a {
 	}
 }
 a {
-	// font-family: var(--font-mono);
 	border-bottom: solid 1px color-mix(in srgb, var(--color-link-main) 0%, transparent);
-	// transition: border-color 0.25s ease-in-out, font-weight 0.25s ease-in-out;
 	transition: border-color 0.25s ease-in-out;
 	color: var(--color-link-main);
 	text-decoration: none;
@@ -144,7 +142,6 @@ a {
 	&:hover {
 		text-decoration: none;
 		border-color: var(--color-link-main);
-		// 	font-weight: 600;
 	}
 }
 .router-link-active {
