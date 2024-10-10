@@ -1,8 +1,8 @@
 <div style="max-width: 256px;">
 
-![ff](docs/.vuepress/public/logo/Pepperi-Logo.svg#gh-light-mode-only)
+![Pepperi Logo Light](docs/.vuepress/public/logo/Pepperi-Logo.svg#gh-light-mode-only)
 
-![ff](docs/.vuepress/public/logo/Pepperi-Logo-Invert.svg#gh-dark-mode-only)
+![Pepperi Logo Dark](docs/.vuepress/public/logo/Pepperi-Logo-Invert.svg#gh-dark-mode-only)
 
 </div>
 
