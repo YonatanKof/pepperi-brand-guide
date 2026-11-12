@@ -145,3 +145,12 @@ ol li::marker {
 .site-name {
 	font-family: var(--font-title);
 }
+span > .route-link {
+	border: none;
+	position: absolute;
+	transform: translateX(0);
+	transition: transform 0.25s ease-in-out;
+	&:hover {
+		transform: translateX(0.1em);
+	}
+}
